@@ -1,0 +1,254 @@
+
+/*********** GENERAL ************/
+
+
+
+body {
+
+  background-image: url("other-images/background-mesh-gradient-01.png");
+  background-color: #cccccc;
+  height:1000px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  z-axis:1;
+  
+  font-family: 'Manrope', sans-serif;
+
+    }
+
+#content{
+	color: #FFFFFF;
+}
+
+
+
+
+/*********** [BOOTSTRAP] CONTAINER EDITS ************/
+
+.container-fluid{
+
+padding:5%;
+
+}
+
+
+
+/*********** NAVIGATION ************/
+
+
+.navbar{
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 89.26%;
+bottom: 0%;
+
+background: rgba(255, 255, 255, 0.25);
+box-shadow: 0px -4px 24px 12px rgba(148, 184, 217, 0.1);
+border-radius: 24px 24px 0px 0px;
+
+text-transform: uppercase;
+
+z-index:1;
+
+}
+
+
+
+.nav-link{
+
+color: #FFFFFF;
+
+}
+
+
+.nav-link:hover{
+
+color: rgba(148, 184, 217, 0.8);
+
+}
+
+
+.nav-link:active{
+
+color: #94B8D9;
+
+}
+
+
+#home{
+
+font-weight: bold;
+display: inline-block;
+
+}
+
+
+#collections{
+font-weight: bold;
+display: inline-block;
+
+}
+
+
+#contact{
+font-weight: bold;
+display: inline-block;
+
+}
+
+
+#about{
+
+font-weight: bold;
+display: inline-block;
+
+}
+
+
+
+/*********** NAVIGATION BAR ************/
+
+.nav-item{
+
+padding-right: 80px;
+
+}
+
+.navigation-bar{
+margin: auto;
+align-items:center;
+justify-content: center;
+padding-bottom:0%;
+z-index:1;
+
+}
+
+/*********** ANIMATIONS ************/
+
+.circle-image {
+opacity: 75%;
+animation: circlerotate 10s infinite, circlefade 10s infinite;
+}
+
+@keyframes circlerotate {
+  0% {transform: rotate(0deg);}
+  50% {transform: rotate(180deg);}
+  100% {transform: rotate(360deg);}
+}
+
+
+@keyframes circlefade {
+  0% {opacity:0%;}
+  50% {opacity:100%;}
+  100% {opacity:0%;}
+}
+
+
+
+.tamara-img {
+opacity: 100%;
+float:right;
+
+
+animation: tamara-appear 4s;
+
+}
+
+
+@keyframes tamara-appear {
+  0% {opacity:0%;}
+  100% {opacity:100%;}
+}
+
+.home-img-one {
+opacity: 0%;
+
+border-radius: 50%;
+
+  box-shadow:
+    0 0 20px 10px rgba(148, 184, 217, 0.4),  /* basically I am using the same faded blue color but different sizes for a gradient effect */
+    0 0 40px 20px rgba(148, 184, 217, 0.4), 
+    0 0 60px 30px rgba(148, 184, 217, 0.4); 
+    
+    
+animation: home-img-appear 2s forwards; /* including the forwards is what makes the images stay on the page after the 2s animation is done! */
+
+
+}
+
+@keyframes home-img-appear {
+  0% {opacity:0%;}
+  100% {opacity:100%;}
+}
+
+.home-img-two {
+opacity: 0%;
+
+border-radius: 50%;
+
+  box-shadow:
+    0 0 20px 10px rgba(148, 184, 217, 0.4),  /* basically I am using the same faded blue color but different sizes for a gradient effect */
+    0 0 40px 20px rgba(148, 184, 217, 0.4), 
+    0 0 60px 30px rgba(148, 184, 217, 0.4); 
+    
+    
+animation: home-img-appear 4s forwards;
+animation-delay: 2s;
+
+}
+
+.home-img-three {
+opacity: 0%;
+
+border-radius: 50%;
+
+  box-shadow:
+    0 0 20px 10px rgba(148, 184, 217, 0.4),  /* basically I am using the same faded blue color but different sizes for a gradient effect */
+    0 0 40px 20px rgba(148, 184, 217, 0.4), 
+    0 0 60px 30px rgba(148, 184, 217, 0.4); 
+    
+    
+animation: home-img-appear 2s forwards;
+animation-delay: 4s;
+}
+
+.home-img-four {
+opacity: 0%;
+
+border-radius: 50%;
+
+  box-shadow:
+    0 0 20px 10px rgba(148, 184, 217, 0.4),  /* basically I am using the same faded blue color but different sizes for a gradient effect */
+    0 0 40px 20px rgba(148, 184, 217, 0.4), 
+    0 0 60px 30px rgba(148, 184, 217, 0.4); 
+    
+    
+animation: home-img-appear 2s forwards;
+animation-delay: 6s;
+}
+
+
+/*********** BUTTON STYLING ************/
+
+
+.tech-button{
+
+  border-radius: 12px;
+  border: 2px solid #FFFFFF;
+  padding: 8px; 
+  background-color: rgba(148, 184, 217, 0.4);
+
+}
+
+.tech-button:hover{
+
+  border-radius: 12px;
+  border: 2px solid #FFFFFF;
+  padding: 8px; 
+  background-color: rgba(148, 184, 217, .8);
+
+}

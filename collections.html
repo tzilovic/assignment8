@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    
+    <!-- javascript -->
+	<script src="assets/main.js" type="text/javascript"></script>
+	
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="assets/style_hw8.css">
+	<!-- Google Fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com"> 
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+	<link href="https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,500;1,700&family=Manrope:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+  
+    <title>T Zilovic - Techniques</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-sm" style="position:fixed">
+
+
+  <div class="navigation-bar">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="index.html">Home </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="collections.html" id="collections">Techniques</a>
+      </li>
+	  <li class="nav-item">
+        <a class="nav-link" href="contact.html">Contact</a>
+      </li>
+	  <li class="nav-item">
+        <a class="nav-link" href="about.html">About</a>
+      </li>
+
+    </ul>
+
+  </div>
+</nav>
+
+
+<div class="container-fluid">
+  <h1 style="text-align:right;">techniques</h1>
+  <p style="text-align:right;">post-production</p>
+<br>
+  <div class="row">
+  
+    <div class="col-sm-3 col-md-3 col-lg-3">
+      <img class= "gradient-mapping" id="gradient-mapping-img" src= "assets/gradient-mapping/gradient-mapping_pink.png" alt="Zoomed-in photo of girl in car showing tattoo behind ear." style="width:75%;">
+    </div>
+    
+    <div class="col-sm-3 col-md-3 col-lg-3">
+    <br>
+      <h2> gradient mapping</h2>
+      <p> gradient mapping assigns a gradient of color to the shadows, midpoints, and highlights of an image; gradients can remain in the same hue, or include a variety of different color tones  </p>
+    </div>
+    
+    <div class="col-sm-3 col-md-3 col-lg-6">
+    <br>
+    <br>
+      <h4> try it out...</h4> 
+      <button class="tech-button" onclick="originalgradient()"> original </button>
+      <button class="tech-button" onclick="bluegradient()"> blue gradient </button>
+      <button class="tech-button" onclick="purplegradient()"> purple gradient </button>
+      <button class="tech-button" onclick="pinkgradient()"> pink gradient </button>
+    </div>
+    
+    <div class="col-sm-3 col-md-3 col-lg-0">
+    
+    </div>
+    
+        
+  </div>
+  
+  <br>
+  
+    <div class="row">
+  
+    <div class="col-sm-3 col-md-3 col-lg-3">
+      <img class= "double-exposure" id="double-exposure-img" src= "assets/double-exposure/double-exposure_final.png" alt="Double-exposured image showing girl and silhouette blended." style="width:75%;">
+    </div>
+    
+    <div class="col-sm-3 col-md-3 col-lg-3">
+    <br>
+      <h2> double-exposure</h2>
+      <p> double-exposure originates from film photography; it essentially blends two exposures into a single image, often producing dream-like results </p>
+    </div>
+    
+    <div class="col-sm-3 col-md-3 col-lg-6">
+    <br>
+    <br>
+      <h4> try it out...</h4> 
+      <button class="tech-button" onclick="imgone()"> image one </button>
+      <button class="tech-button" onclick="imgtwo()"> image two </button>
+      <button class="tech-button" onclick="imgblended()"> blended </button>
+    </div>
+    
+    <div class="col-sm-3 col-md-3 col-lg-0"">
+    </div>
+    
+        
+  </div>
+  
+    <br>
+  
+    <div class="row">
+  
+    <div class="col-sm-3 col-md-3 col-lg-3">
+      <img class= "masking-regions" id="masking-region" src= "assets/masking-region/masking-region_final.png" alt="Blended photography showing gravestone and girl looking out the window." style="width:75%;">
+    </div>
+    
+    <div class="col-sm-3 col-md-3 col-lg-3">
+    <br>
+      <h2> masking regions</h2>
+      <p> employing advanced masking regions is a great way to blend different images together by specifying which areas of an image you’d like to hide/make visible</p>
+    </div>
+    
+    <div class="col-sm-3 col-md-3 col-lg-6">
+    <br>
+    <br>
+      <h4> try it out...</h4> 
+      
+      <button class="tech-button" onclick="maskone()"> image one </button>
+      <button class="tech-button" onclick="masktwo()"> image two </button>
+      <button class="tech-button" onclick="maskthree()"> mask region </button>
+      <button class="tech-button" onclick="maskblend()"> mask img two, blend</button>
+    </div>
+    
+    <div class="col-sm-3 col-md-3 col-lg-0"">
+
+    </div>
+    
+        
+  </div>
+  
+    <br>
+  
+    <div class="row">
+  
+    <div class="col-sm-3 col-md-3 col-lg-3">
+      <img class= "color-grading" id="color-grading-img" src= "assets/color-grading/color-grading_curves-three.png" alt="Silhouette of girl in front of art piece composed of circular lights." style="width:75%;">
+    </div>
+    
+    <div class="col-sm-3 col-md-3 col-lg-3">
+    <br>
+      <h2> color grading</h2>
+      <p> used frequently in cinematography, color grading allows you to adjust the color hues/values in an image, often producing different moods from a single image</p>
+    </div>
+    
+    <div class="col-sm-3 col-md-3 col-lg-6">
+    <br>
+    <br>
+      <h4> try it out...</h4> 
+      
+      <button class="tech-button" onclick="gradingoriginal()"> original </button>
+      <button class="tech-button" onclick="gradingone()"> curves one </button>
+      <button class="tech-button" onclick="gradingtwo()"> curves two </button>
+      <button class="tech-button" onclick="gradingthree()"> curves three </button>
+    </div>
+    
+    <div class="col-sm-3 col-md-3 col-lg-0"">
+
+    </div>
+    
+        
+  </div>  
+  
+  
+  
+  
+</div>
+
+
+  </body>
+</html>
